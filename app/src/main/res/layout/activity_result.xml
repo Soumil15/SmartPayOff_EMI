@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Result">
+
+    <TextView
+        android:id="@+id/PrincipalViewText"
+        android:layout_width="361dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="50dp"
+        android:background="#0288D1"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="14pt"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEMI" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="408dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="3dp"
+        android:background="#0288D1"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Smart Payoff Calculator"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewEMI"
+        android:layout_width="361dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ADD8E6"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Payment amount "
+        android:textSize="12pt"
+        app:layout_constraintBottom_toTopOf="@+id/PrincipalViewText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="194dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="46dp"
+        android:background="#ADD8E6"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Mortgage Amount : "
+        android:textSize="10pt"
+        app:layout_constraintEnd_toStartOf="@+id/MortgageViewTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PrincipalViewText"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/MortgageViewTxt"
+        android:layout_width="194dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="8dp"
+        android:background="#0288D1"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textSize="10pt"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/PrincipalViewText"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/InterestRateViewText"
+        android:layout_width="194dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        android:background="#0288D1"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textSize="10pt"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/AmortizationViewText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewInterest"
+        app:layout_constraintTop_toBottomOf="@+id/MortgageViewTxt"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewTenure"
+        android:layout_width="194dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="150dp"
+        android:background="#ADD8E6"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Amortization : "
+        android:textSize="10pt"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/AmortizationViewText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInterest"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/AmortizationViewText"
+        android:layout_width="194dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="153dp"
+        android:background="#0288D1"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textSize="10pt"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewTenure"
+        app:layout_constraintTop_toBottomOf="@+id/InterestRateViewText" />
+
+    <TextView
+        android:id="@+id/textViewInterest"
+        android:layout_width="194dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="40dp"
+        android:background="#ADD8E6"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Interest Rate : "
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTenure"
+        app:layout_constraintEnd_toStartOf="@+id/InterestRateViewText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
